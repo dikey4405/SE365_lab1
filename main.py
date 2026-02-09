@@ -1,9 +1,12 @@
+import os
 import pandas as pd
 from train import run_training
 from utils import plot_history, plot_confusion_matrix
 
-DATA_DIR = "/kaggle/input/se365-lab1" 
-configs = [
+if os.path.exists("/kaggle/working"):
+    DATA_DIR = "/kaggle/working/data"
+else:
+    DATA_DIR = "./data"configs = [
     # Exp-0: Baseline (Adam, No Regularization)
     {
         'name': 'Exp0_Baseline',
@@ -112,3 +115,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
