@@ -6,7 +6,8 @@ from utils import plot_history, plot_confusion_matrix
 if os.path.exists("/kaggle/working"):
     DATA_DIR = "/kaggle/working/data"
 else:
-    DATA_DIR = "./data"configs = [
+    DATA_DIR = "./data"
+configs = [
     # Exp-0: Baseline (Adam, No Regularization)
     {
         'name': 'Exp0_Baseline',
@@ -115,4 +116,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
