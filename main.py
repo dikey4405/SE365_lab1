@@ -10,7 +10,7 @@ else:
 configs = [
     # Exp-0: Baseline (Adam, No Regularization)
     {
-        'name': 'Exp0_Baseline_v2',
+        'name': 'Exp0_Baseline_v1',
         'optimizer': 'adam',
         'lr': 1e-4,
         'batch_size': 32,
@@ -129,6 +129,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
