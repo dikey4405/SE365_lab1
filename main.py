@@ -91,7 +91,7 @@ configs = [
 def main():
     results = []
 
-    selected_experiments = [configs[0]] 
+    selected_experiments = configs 
 
     for config in selected_experiments:
         print(f"\n{'='*40}")
@@ -129,6 +129,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
