@@ -10,8 +10,21 @@ else:
 configs = [
     # Exp-0: Baseline (Adam, No Regularization)
     {
-        'name': 'Exp0_Baseline',
+        'name': 'Exp0_Baseline_v2',
         'optimizer': 'adam',
+        'lr': 1e-4,
+        'batch_size': 32,
+        'epochs': 15,
+        'dropout': 0.0,
+        'weight_decay': 0.0,
+        'augmentation': False,
+        'early_stopping': False
+    },
+
+    # Exp-0: Baseline (SGD, No Regularization)
+    {
+        'name': 'Exp0_Baseline_v2',
+        'optimizer': 'sgd',
         'lr': 1e-4,
         'batch_size': 32,
         'epochs': 15,
@@ -116,5 +129,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
